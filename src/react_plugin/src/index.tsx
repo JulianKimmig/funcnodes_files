@@ -210,7 +210,6 @@ const renderpluginfactory = ({}: RenderPluginFactoryProps) => {
     const fileDownload = React.useRef<HTMLAnchorElement>(null);
     const get_full_value = useIOGetFullValue();
     const filename = useIOValueStore("filename");
-    console.log(filename);
     const download = React.useCallback(async () => {
       if (!get_full_value) return;
       if (!filename) return;
